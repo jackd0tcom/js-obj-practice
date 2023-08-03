@@ -17,7 +17,9 @@ var arr = [10, 20, 30];
   Return the first item in the given array.
 */
 
-//Code Here
+function first(arr) {
+  return arr.shift();
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -30,7 +32,9 @@ var arr = [40, 50, 60];
   Return the last item in the given array.
 */
 
-//Code Here
+function last(arr) {
+  return arr.pop();
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -43,7 +47,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-//Code Here
+function looper(family) {
+  for (let i = 0; i <= family.length - 1; i++) {
+    alert(family[i])
+  }
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -56,7 +64,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-//Code Here
+function reversedLooper(letters) {
+  for (let i = letters.length - 1; i >= 0; i--) {
+    alert(letters[i])
+  }
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -69,7 +81,13 @@ var nums = [1, 2, 3, 6, 22, 98, 45, 23, 22, 12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+function evenFinder(nums) {
+  var arr = [];
+  for (let i = 0; i <= nums.length; i++)
+    if (nums[i] % 2 === 0) {
+      arr.push(nums[i])
+    } return arr
+}
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
@@ -265,7 +283,7 @@ var user1 = {
 //Code Here
 
 /*
-  Now you have a very common data structure. 
+  Now you have a very common data structure.
   Twitter is a good use case.
   It's easy to imagine that your followers list on Twitter is an array full of objects and those objects contain properties about the specific person you follow.
 
