@@ -148,11 +148,11 @@ each(names, function (item, indice) {
 */
 
 function getUserById(arr, id, cb) {
-  for (let element of arr) {
-    if (arr[element] === id) {
-      cb(arr[element])
-    }
+  for (let i = 0; i <= 0; i++) {
+    if (arr[i].id === id) {
+    } return cb(arr[i])
   }
+
 }
 
 // Do not edit the code below.
